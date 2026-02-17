@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-    <body>
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Моё Портфолио</h2>
-            <!--- Кнопки фильтров -->
-            <div class="text-center mb-4">
-                <div class="btn-group" role="group">
-                    <button class="btn btn-outline-primary" onclick="filterGallery('all')">Все</button>
-                    <button class="btn btn-outline-primary" onclick="filterGallery('web')">Веб-дизайн</button>
-                    <button class="btn btn-outline-primary" onclick="filterGallery('photo')">Фотография</button>
-                    <button class="btn btn-outline-primary" onclick="filterGallery('graphic')">Графика</button>
-                </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Моё Портфолио</h2>
+        <!--- Кнопки фильтров -->
+        <div class="text-center mb-4">
+            <div class="btn-group" role="group">
+                <button class="btn btn-outline-primary" onclick="filterGallery('all')">Все</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('web')">Веб-дизайн</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('photo')">Фотография</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('graphic')">Графика</button>
             </div>
-            <div class="row g-3" id="gallery">
-                <!-- Карточка 1 - Веб-дизайн -->
-                <div class="col-6 col-md-4 gallery-item" data-category="web">
+        </div>
+        <div class="row g-3" id="gallery">
+            <!-- Карточка 1 - Веб-дизайн -->
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
                 <div class="card h-100">
                     <img src="https://onelab.kz/projects/ant/imgs/bg6.png"
                         class="card-img-top" alt="Веб-проект">
@@ -36,9 +35,9 @@
                         <small class="text-muted">Веб-дизайн</small>
                     </div>
                 </div>
-                </div>
-                <!-- Карточка 2 - Фото -->
-                <div class="col-6 col-md-4 gallery-item" data-category="photo">
+            </div>
+            <!-- Карточка 2 - Фото -->
+            <div class="col-6 col-md-4 gallery-item" data-category="photo">
                     <div class="card h-100">
                         <img src="https://placepic.ru/wp-content/uploads/2021/04/16816973351_3206c7f3e1_b.jpg"
                             class="card-img-top" alt="Фото">
@@ -47,9 +46,9 @@
                             <small class="text-muted">Фото</small>
                         </div>
                     </div>
-                </div>
-                <!-- Карточка 3 - Фото -->
-                <div class="col-6 col-md-4 gallery-item" data-category="photo">
+            </div>
+            <!-- Карточка 3 - Фото -->
+            <div class="col-6 col-md-4 gallery-item" data-category="photo">
                 <div class="card h-100">
                     <img src="https://business-review.eu/wp-content/uploads/2015/07/Ikea-forest.jpg"
                         class="card-img-top" alt="Фото">
@@ -58,9 +57,9 @@
                         <small class="text-muted">Фото</small>
                     </div>
                 </div>
-                </div>
-                <!-- Карточка 4 - Графика -->
-                <div class="col-6 col-md-4 gallery-item" data-category="graphic">
+            </div>
+            <!-- Карточка 4 - Графика -->
+            <div class="col-6 col-md-4 gallery-item" data-category="graphic">
                 <div class="card h-100">
                     <img src="https://papik.pro/uploads/posts/2023-03/1677688909_papik-pro-p-krasivaya-utka-risunok-33.jpg"
                         class="card-img-top" alt="Графика">
@@ -69,9 +68,9 @@
                         <small class="text-muted">График</small>
                     </div>
                 </div>
-                </div>
-                <!-- Карточка 5 - Веб-дизайн -->
-                <div class="col-6 col-md-4 gallery-item" data-category="web">
+            </div>
+            <!-- Карточка 5 - Веб-дизайн -->
+            <div class="col-6 col-md-4 gallery-item" data-category="web">
                 <div class="card h-100">
                     <img src="https://awesome-design.com/wp-content/uploads/2023/03/IMG_2152.png"
                         class="card-img-top" alt="Веб-проект">
@@ -80,9 +79,9 @@
                         <small class="text-muted">Веб-дизайн</small>
                     </div>
                 </div>
-                </div>
-                <!-- Карточка 6 - Графика -->
-                <div class="col-6 col-md-4 gallery-item" data-category="graphic">
+            </div>
+            <!-- Карточка 6 - Графика -->
+            <div class="col-6 col-md-4 gallery-item" data-category="graphic">
                 <div class="card h-100">
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fuprostim.com%2Fwp-content%2Fuploads%2F2020%2F11%2FKotiki_00336.jpg&f=1&nofb=1&ipt=e2208f4ab400c510083c0005a4c4fc6e47ba868badeabe281b62d71db33f2e71"
                         class="card-img-top" alt="Графика">
@@ -91,10 +90,9 @@
                         <small class="text-muted">Графика</small>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
-    </body>
+    </div>
     <script>
         function filterGallery(category) {
             const items = document.querySelectorAll(".gallery-item");
